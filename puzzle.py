@@ -62,7 +62,7 @@ def validate_board(board: list):
     """
     Validate board
     """
-    return horizontal_check(board) and color_check(board) and color_check(board)
+    return horizontal_check(board) and column_check(board) and color_check(board)
 
 
 
@@ -74,16 +74,16 @@ if __name__ == '__main__':
     "* 4 1****",
     "     9 5 ",
     " 6  83  *",
-    "3      **",
+    "3   1  **",
     "  8  2***",
     "  2  ****"
     ]
     # print(horizontal_check(['***1***','***238 **','**2***',]))
     # print(column_check(['1***56',' ***23','*** **','  8** ','******','******']))
-    print(column_check(board))
+    # print(column_check(board))
     # print(color_check(board))
     # print(one_color(board, 0, 4))
     # print(color_check(board))
-    # print(validate_board(board))
+    print(validate_board(board))
     # import doctest
     # doctest.testmod()
